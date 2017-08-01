@@ -1,0 +1,53 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'WhatLiftsYou' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+
+  # Pods for WhatLiftsYou
+# Show Gif
+# https://github.com/kaishin/Gifu
+# MIT
+pod 'Gifu'
+
+# Firebase Setup
+pod 'Firebase'
+pod 'Firebase/Core'
+pod 'Firebase/Storage'
+pod 'Firebase/Database'
+
+# Facebook Sharing
+pod 'FacebookCore'
+pod 'FacebookShare'
+
+# Twitter Sharing
+pod 'TwitterKit'
+pod 'Fabric'
+
+# Page loader
+# https://github.com/icanzilb/SwiftSpinner
+# MIT
+pod "SwiftSpinner"
+
+# Decode/Encode Gif
+# https://github.com/ibireme/YYImage
+# MIT
+pod 'YYImage'
+
+#Crashlytics from Fabric + Firebase
+use_frameworks!
+pod 'Crashlytics'
+
+  target 'WhatLiftsYouTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'WhatLiftsYouUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -1,0 +1,6 @@
+framework module Pods_WhatLiftsYou {
+  umbrella header "Pods-WhatLiftsYou-umbrella.h"
+
+  export *
+  module * { export * }
+}
